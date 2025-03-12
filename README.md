@@ -1,1 +1,174 @@
-# github has a problems with diploying webpage
+html {
+  font-size: 10px;
+  /* add a font size of 10px */
+
+}
+
+body {
+  font-family: sans-serif , serif; 
+  /* Add a general font size to the doccoument */
+  line-height: 1.8;
+}
+
+/* Header */
+header {
+  text-align: center;
+  /* Centered the top of the header page */
+  padding: 2rem 0;
+  border-top: 0.5rem solid #8B0000;
+  border-bottom: 0.5rem solid #8B0000;
+  width: 100%;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif; /* changed the font of h1 (header) */
+  font-size: 5rem;
+  /* Changes the font size of the header */
+  letter-spacing: 0.1rem;
+  margin: 0;
+}
+
+/* General layout of doccumnet*/
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 2rem;
+}
+
+section {
+  flex: 2;
+}
+
+/* Headings */
+h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.6rem;
+  text-indent: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Top Courses Choices Link Lists */
+ul {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  padding-left: -7rem;
+}
+
+li {
+  
+  margin-bottom: 0.1rem;
+  /* changes the margins of the course lists. .1 or .5 works */
+}
+
+/* Underline Links lists */
+a {
+  text-decoration: underline;
+  color: #8B0000;
+}
+
+/* recolor the links if clicked to red */
+a:visited { 
+  color: #6A0000;
+}
+
+a:hover,
+a:focus {
+  /* changes the font  over top course choices to blue. I like blue*/
+  text-decoration: none;
+  color: #2a8ca5;
+}
+
+a:active {
+  color: #2a8ca5;
+  font-weight: bold;
+}
+
+/* tabs */
+nav {
+  text-decoration: underline none;
+  /* delete line 148 later */
+  position: absolute;
+  right: 40rem;
+  /* Changed to fit the red columums. Erorr occurs when minmizing window? Fix later */
+  top: 75%;
+  transform: translateY(-200%);
+  /* shifts the height of the tabs */
+}
+
+nav ul {
+  list-style: none;
+  /*Get's rid of the (Tabs) margins */
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Changes the color of the outline boarder for NAV A (Tabs) */
+nav a {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #8B0000;
+  color: #8B0000;
+  width: 200px;
+  text-align: center;
+}
+
+/* changes the color of the hover over the boxxed icon. Lines 161-165 */
+nav a:hover,
+nav a:focus {
+  background-color: #25008b;
+  color: white;
+  text-decoration: none;
+}
+/* Needed fixes. FIX LATER! Size up the margins on 'Top Course Choices' Change fonts*/
+
+ol{
+  font-size: 1.6rem; /* OL (If you're interested lists), changed readablity */
+  line-height: 2;
+  margin-top: 2rem;
+  text-align: left;
+  width: 80%;
+}
+
+ul{ /* ul changes the font size of the general bullet listed items */
+  font-size: 1.6rem; 
+}
+
+image {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: 0.5rem; /* Adds the space between the text and the icon */
+  vertical-align: middle;
+}
+
+a[target="_blank"]::after {
+  content: " 🔗";
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+/* Add the external PNG from github */
+
+/* figure out later how to add text 
+
+.image-container {
+  width: 300px;
+  height: 200px;
+  background-image: url('external-link-52.png');
+  background-size: cover; 
+  background-position: center; /* Centers the image 
+}
+
+ external-image: url(url(external-link-52.png));
